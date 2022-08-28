@@ -22,8 +22,7 @@ let newEducation = {
     period: "2019 - 2021"
 }
 
-// console.log(biodata)
-
+// Mengganti isi object dengan data baru
 biodata = {
     ...biodata,
     name: "Brandon Wijaya",
@@ -34,14 +33,16 @@ biodata = {
     }
 }
 
-// console.log(biodata)
+console.log(biodata)
 
+// Mengambil data pada object dengan dan tanpa destructuring
 const { primary } = biodata.phone
 const secondary = biodata.phone.secondary
 
-// console.log(primary)
-// console.log(secondary)
+console.log(primary)
+console.log(secondary)
 
+// Menggabungkan data ke dalam array yang ada pada object
 biodata.education = [
     {
         ...biodata.education[0],
@@ -49,4 +50,4 @@ biodata.education = [
     newEducation
 ]
 
-// console.log(biodata)
+console.log(biodata)

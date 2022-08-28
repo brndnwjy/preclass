@@ -22,6 +22,11 @@ Discount : ${discountPrice}
 Subtotal : ${subtotal}`)
 }
 
-// order(4000, 10)
-// order(6000, 10)
-// order(18000, 10)
+// Kasus A : minimum harga penggunaan diskon tidak terpenuhi
+order(4000, 10)
+
+// Kasus B : minimum harga penggunaan diskon terpenuhi
+order(6000, 10)
+
+//  Kasus C : minimum harga penggunaan diskon terpenuhi dan potongan melebihi batas maksimum
+order(18000, 10)
